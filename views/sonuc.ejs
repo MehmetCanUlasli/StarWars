@@ -1,0 +1,19 @@
+<h1> Sonuç Sayfası </h1>
+
+
+<% veri["results"].forEach(function(sonuc){ %>
+    
+   <h3>İsim: </h3><%= sonuc["name"] %>
+   <h3>Kilo: </h3><%= sonuc["mass"] %>
+   <h3>Boy: </h3><%= sonuc["height"] %>
+   <h3>Saç Rengi: </h3><%= sonuc["hair_color"] %>
+   <h3>Deri Rengi: </h3><%= sonuc["skin_color"] %>
+   <h3>Göz Rengi:  </h3><%= sonuc["eye_color"] %>
+   <h3>Cinsiyet: </h3><%= sonuc["gender"] %>
+<!--   <h3>Uzay Gemisi: </h3> <%= sonuc["starships"][0] %>
+   <h3>Memleket: </h3> <%= sonuc["homeworld"] %>
+-->
+    
+<%})%>
+
+<a href="/">Anasayfa </a>
